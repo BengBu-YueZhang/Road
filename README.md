@@ -22,7 +22,7 @@ Rpload.propTypes = {
 
 ## 感谢
 
-1. 后知后觉提供的上传接口, 供我测试
+1. [@后知后觉](https://www.justdodo.cn/#/index/maze)提供的上传接口, 供我测试
 2. [OSVALDAS VALUTIS](https://css-tricks.com/drag-and-drop-file-uploading/)博客对我的帮助
 
 
