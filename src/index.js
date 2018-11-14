@@ -110,9 +110,11 @@ class Rpload extends React.Component {
       let guids = this.uploadingQueue.map(f => f.guid)
       if (guids.indexOf(current.guid) < 0) {
         this.uploadingQueue = [...this.uploadingQueue, current]
+        let uploadFile = new FormData()
+        uploadFile.append('file', current)
         axios.post(
           url,
-          new FormData().append('file', current)
+          uploadFile
         ).then(_ => {
           this.setState(prevState => {
             current.success = true
